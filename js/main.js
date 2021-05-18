@@ -55,3 +55,10 @@ $(document).ready(function() {
         zoomrange: [4, 4]
     });
 });
+// $('#myModal').on('shown.bs.modal', function() {
+//     $(".big_image").elevateZoom({
+//         zoomType: "lens",
+//         lensShape: "round",
+//         lensSize: 300
+//     });
+// });
