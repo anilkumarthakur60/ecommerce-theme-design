@@ -43,8 +43,6 @@ function decreaseValue() {
     document.getElementById('number').value = value;
 }
 
-//zoom product effect
-
 $(document).ready(function() {
     $(".small_img").hover(function() {
         $(".big_image").attr('src', $(this).attr('src'))
@@ -52,13 +50,11 @@ $(document).ready(function() {
 });
 $(document).ready(function() {
     $(".big_image").imagezoomsl(function() {
-        zoomrange: [4, 4]
+        zoomrange: [1, 1]
     });
+    $('#productmodal').on('shown.bs.modal', function() {
+        $(".big_image").imagezoomsl(function() {
+            zoomrange: [1, 1]
+        });
+    })
 });
-// $('#myModal').on('shown.bs.modal', function() {
-//     $(".big_image").elevateZoom({
-//         zoomType: "lens",
-//         lensShape: "round",
-//         lensSize: 300
-//     });
-// });

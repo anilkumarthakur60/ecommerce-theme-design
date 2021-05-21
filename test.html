@@ -20,10 +20,9 @@
 </head>
 
 <body>
-    <!-- Button trigger modal -->
     <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId">
-     Launch
-   </button>
+        Launch
+      </button>
 
     <!-- Modal -->
     <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
@@ -32,30 +31,166 @@
                 <div class="modal-header">
                     <h5 class="modal-title">Modal title</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                   <span aria-hidden="true">&times;</span>
-                               </button>
+                                      <span aria-hidden="true">&times;</span>
+                                  </button>
                 </div>
                 <div class="modal-body">
 
                     <div class="container">
                         <div class="row ">
-                            <div class="col-lg-6 col-md-6  col-sm-12 " style="z-index: 9999 !importants;">
+                            <div class="col-lg-6 col-md-6  col-sm-12 ">
                                 <div class=" mb-2 ">
-                                    <img src="images/1.png" class="big_image  mt-2 border border-primary w-100 " height="400" width="350" alt="">
+                                    <img src="https://media.istockphoto.com/photos/four-wheel-drive-on-dirt-road-in-pine-forest-drone-shot-picture-id1206377870" class="big_image  mt-2 border border-primary w-100 " height="400" width="350" alt="">
 
                                 </div>
 
                                 <div class=" d-flex ">
 
-                                    <img src="images/1.png" class="small_img border border-primary    w-25  ">
-                                    <img src="images/2.png" class="small_img border border-primary    w-25  ">
-                                    <img src="images/3.png" class="small_img border border-primary    w-25  ">
-                                    <img src="images/4.png" class="small_img border border-primary    w-25  ">
+                                    <img src="https://media.istockphoto.com/photos/four-wheel-drive-on-dirt-road-in-pine-forest-drone-shot-picture-id1206377870" class="small_img border border-primary    w-25  ">
+                                    <img src="https://media.istockphoto.com/photos/four-wheel-drive-on-dirt-road-in-pine-forest-drone-shot-picture-id1206377904" class="small_img border border-primary    w-25  ">
+                                    <img src="https://media.istockphoto.com/photos/road-through-pine-forest-near-taradale-laurel-hill-snowy-mountains-picture-id1206377901" class="small_img border border-primary    w-25  ">
+                                    <img src="https://media.istockphoto.com/photos/aerial-view-of-highway-with-beautiful-forest-picture-id903723748" class="small_img border border-primary    w-25  ">
                                 </div>
 
 
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12 w-100" style="z-index: unset;">
+                            <div class="col-lg-6 col-md-6 col-sm-12 w-100">
+                                <form action="">
+
+                                    <h1 class=""> <a href="" class="text-decoration-none text-dark">Product Name</a> </h1>
+                                    <h4><span class="text-danger">999</span><span class="text-dark mx-3"><del>1111</del></span> <span class="text-success"> 35% off</span></h4>
+                                    <h5><i class="fa fa-check-square text-success  " aria-hidden="true"></i>Warrenty/Return time</h5>
+                                    <h5><i class="fa fa-check-square text-success" aria-hidden="true"></i>Cash on Delivery/Esewa</h5>
+                                    <input type="hidden" name="product_id" id="pid">
+
+                                    <div class="d-flex my-1">
+                                        <select name="" id="" class="form-control" required>
+                                        <option value="" disabled selected>Select Size</option>
+                                        <option value="1">xl</option>
+                                        <option value="1">xl</option>
+                                        <option value="1">xl</option>
+
+                                   </select>
+                                        <select name="" id="" class="form-control" required>
+                                        <option value="" selected disabled>Select Color</option>
+                                        <option value="1">xl</option>
+                                        <option value="1">xl</option>
+                                        <option value="1">xl</option>
+
+                                    </select>
+                                    </div>
+
+                                    <div class="d-inline-flex my-1">
+                                        <div class="value-button rounded-circle" id="decrease" onclick="decreaseValue()" value="Decrease Value"> <i class="fa fa-minus " aria-hidden="true"></i> </div>
+                                        <input type="number" id="number" class="form-control border border-light" value="1" min="1" />
+                                        <div class="value-button rounded-circle" id="increase" onclick="increaseValue()" value="Increase Value"><i class="fa fa-plus " aria-hidden="true"></i></div>
+                                        <button type="submit" class="btn btn-danger mx-2">Add To Cart</button>
+                                        <a href="" class="m-auto btn btn-outline-danger"><i class="fa fa-2x fa-heart" aria-hidden="true"></i></a>
+                                    </div>
+
+                                    <h5>Stock: </h5>
+                                    <h5>Category:</h5>
+                                    <h5>Sub Category:</h5>
+                                    <h5>Brand:</h5>
+
+                                </form>
+                            </div>
+                            <div class="col-lg-12">
+                                <ul class="nav nav-tabs small justify-content-center" role="tablist">
+                                    <li class="nav-item"><a class="nav-link navtab active" data-toggle="tab" href="#home" role="tab">Produc Detail</a></li>
+                                    <li class="nav-item"><a class="nav-link navtab" data-toggle="tab" href="#profile" role="tab">Video</a></li>
+                                    <li class="nav-item"><a class="nav-link navtab" data-toggle="tab" href="#contact" role="tab">Anything</a></li>
+                                </ul>
+
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                        Description
+                                    </div>
+                                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Video</div>
+                                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"> any thing </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row ">
+            <div class="col-lg-6 col-md-6  col-sm-12 ">
+                <div class=" mb-2 ">
+                    <img src="https://media.istockphoto.com/photos/four-wheel-drive-on-dirt-road-in-pine-forest-drone-shot-picture-id1206377870" class="big_image  mt-2 border border-primary w-100 " height="400" width="350" alt="">
+
+                </div>
+
+                <div class=" d-flex ">
+
+                    <img src="https://media.istockphoto.com/photos/four-wheel-drive-on-dirt-road-in-pine-forest-drone-shot-picture-id1206377870" class="small_img border border-primary    w-25  ">
+                    <img src="https://media.istockphoto.com/photos/four-wheel-drive-on-dirt-road-in-pine-forest-drone-shot-picture-id1206377904" class="small_img border border-primary    w-25  ">
+                    <img src="https://media.istockphoto.com/photos/road-through-pine-forest-near-taradale-laurel-hill-snowy-mountains-picture-id1206377901" class="small_img border border-primary    w-25  ">
+                    <img src="https://media.istockphoto.com/photos/aerial-view-of-highway-with-beautiful-forest-picture-id903723748" class="small_img border border-primary    w-25  ">
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#productmodal">
+        Launch
+      </button>
+
+    <div class="modal fade" id="productmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+        <!-- Scrollable modal -->
+        <div class="modal-dialog modal-xl modal-dialog-scrollable w-auto">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <div class="m-auto">
+                        <h5 class="modal-title  " id="exampleModalLabel">Product Quick View</h5>
+                    </div>
+                    <div class="">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                   </button>
+
+                    </div>
+                </div>
+
+                <div class="modal-body">
+
+
+                    <div class="container">
+                        <div class="row ">
+                            <div class="col-lg-6 col-md-6  col-sm-12 ">
+                                <div class=" mb-2 ">
+                                    <img src="https://media.istockphoto.com/photos/four-wheel-drive-on-dirt-road-in-pine-forest-drone-shot-picture-id1206377870" class="big_image  mt-2 border border-primary w-100 " height="400" width="350" alt="">
+
+                                </div>
+
+                                <div class=" d-flex ">
+
+                                    <img src="https://media.istockphoto.com/photos/four-wheel-drive-on-dirt-road-in-pine-forest-drone-shot-picture-id1206377870" class="small_img border border-primary    w-25  ">
+                                    <img src="https://media.istockphoto.com/photos/four-wheel-drive-on-dirt-road-in-pine-forest-drone-shot-picture-id1206377904" class="small_img border border-primary    w-25  ">
+                                    <img src="https://media.istockphoto.com/photos/road-through-pine-forest-near-taradale-laurel-hill-snowy-mountains-picture-id1206377901" class="small_img border border-primary    w-25  ">
+                                    <img src="https://media.istockphoto.com/photos/aerial-view-of-highway-with-beautiful-forest-picture-id903723748" class="small_img border border-primary    w-25  ">
+                                </div>
+
+
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 w-100">
                                 <form action="">
 
                                     <h1 class=""> <a href="" class="text-decoration-none text-dark">Product Name</a> </h1>
@@ -115,103 +250,40 @@
                         </div>
                     </div>
 
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save</button>
+
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
                 </div>
             </div>
         </div>
+
+
     </div>
 
-    <script>
-        $('#exampleModal').on('show.bs.modal', event => {
-            var button = $(event.relatedTarget);
-            var modal = $(this);
-
-            // Use above variables to manipulate the DOM
-
-        });
-    </script>
 
 
     <div class="container">
-        <div class="row ">
-            <div class="col-lg-6 col-md-6  col-sm-12 " style="z-index: 9999 !importants;">
-                <div class=" mb-2 ">
-                    <img src="images/1.png" class="big_image  mt-2 border border-primary w-100 " height="400" width="350" alt="">
-
-                </div>
-
-                <div class=" d-flex ">
-
-                    <img src="images/1.png" class="small_img border border-primary    w-25  ">
-                    <img src="images/2.png" class="small_img border border-primary    w-25  ">
-                    <img src="images/3.png" class="small_img border border-primary    w-25  ">
-                    <img src="images/4.png" class="small_img border border-primary    w-25  ">
-                </div>
-
+        <div class="col-lg-6 col-md-6  col-sm-12  ">
+            <div class=" mb-2 ">
+                <img src="images/1.png" class="big_image  mt-2 border border-primary w-100 " height="400" width="350" alt="">
 
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 w-100" style="z-index: unset;">
-                <form action="">
 
-                    <h1 class=""> <a href="" class="text-decoration-none text-dark">Product Name</a> </h1>
-                    <h4><span class="text-danger">999</span><span class="text-dark mx-3"><del>1111</del></span> <span class="text-success"> 35% off</span></h4>
-                    <h5><i class="fa fa-check-square text-success  " aria-hidden="true"></i>Warrenty/Return time</h5>
-                    <h5><i class="fa fa-check-square text-success" aria-hidden="true"></i>Cash on Delivery/Esewa</h5>
-                    <input type="hidden" name="product_id" id="pid">
+            <div class=" d-flex ">
 
-                    <div class="d-flex my-1">
-                        <select name="" id="" class="form-control" required>
-                    <option value="" disabled selected>Select Size</option>
-                    <option value="1">xl</option>
-                    <option value="1">xl</option>
-                    <option value="1">xl</option>
-
-               </select>
-                        <select name="" id="" class="form-control" required>
-                    <option value="" selected disabled>Select Color</option>
-                    <option value="1">xl</option>
-                    <option value="1">xl</option>
-                    <option value="1">xl</option>
-
-                </select>
-                    </div>
-
-                    <div class="d-inline-flex my-1">
-                        <div class="value-button rounded-circle" id="decrease" onclick="decreaseValue()" value="Decrease Value"> <i class="fa fa-minus " aria-hidden="true"></i> </div>
-                        <input type="number" id="number" class="form-control border border-light" value="1" min="1" />
-                        <div class="value-button rounded-circle" id="increase" onclick="increaseValue()" value="Increase Value"><i class="fa fa-plus " aria-hidden="true"></i></div>
-                        <button type="submit" class="btn btn-danger mx-2">Add To Cart</button>
-                        <a href="" class="m-auto btn btn-outline-danger"><i class="fa fa-2x fa-heart" aria-hidden="true"></i></a>
-                    </div>
-
-                    <h5>Stock: </h5>
-                    <h5>Category:</h5>
-                    <h5>Sub Category:</h5>
-                    <h5>Brand:</h5>
-
-                </form>
+                <img src="images/1.png" class="small_img border border-primary    w-25  ">
+                <img src="images/2.png" class="small_img border border-primary    w-25  ">
+                <img src="images/3.png" class="small_img border border-primary    w-25  ">
+                <img src="images/4.png" class="small_img border border-primary    w-25  ">
             </div>
-            <div class="col-lg-12">
-                <ul class="nav nav-tabs small justify-content-center" role="tablist">
-                    <li class="nav-item"><a class="nav-link navtab active" data-toggle="tab" href="#home" role="tab">Produc Detail</a></li>
-                    <li class="nav-item"><a class="nav-link navtab" data-toggle="tab" href="#profile" role="tab">Video</a></li>
-                    <li class="nav-item"><a class="nav-link navtab" data-toggle="tab" href="#contact" role="tab">Anything</a></li>
-                </ul>
 
-                <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                        Description
-                    </div>
-                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Video</div>
-                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"> any thing </div>
-                </div>
-            </div>
 
         </div>
     </div>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 

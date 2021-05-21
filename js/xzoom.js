@@ -1,3 +1,4 @@
+//zoomjs file
 /*http://zoomsl.sergeland.ru Sergey Zaragulov skype: deeserge icq: 287295769 sergeland@mail.ru*/
 
 (function($, global) {
@@ -692,7 +693,7 @@
             $tracker.data("largeimage", setting.largeimage);
 
 
-            // EVENTS			
+            // EVENTS			a
             $(window).bind("resize", function() {
                 var o = $img.offsetsl();
                 if ($tracker.data("loadimgevt"))
@@ -914,3 +915,20 @@
         loaded999: {}
     });
 })(jQuery, window);
+
+
+$(document).ready(function() {
+    $(".small_img").hover(function() {
+        $(".big_image").attr('src', $(this).attr('src'))
+    });
+});
+$(document).ready(function() {
+    $(".big_image").imagezoomsl(function() {
+        zoomrange: [1, 1]
+    });
+    $('#productmodal').on('shown.bs.modal', function() {
+        $(".big_image").imagezoomsl(function() {
+            zoomrange: [1, 1]
+        });
+    })
+});
